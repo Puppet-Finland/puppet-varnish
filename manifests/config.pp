@@ -22,6 +22,9 @@ class varnish::config {
     }
   }
 
+  varnish::vcl {'default.vcl':
+  }
+
   file { $::varnish::params::sysconfig:
     owner   => 'root',
     group   => 'root',

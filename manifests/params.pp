@@ -4,6 +4,10 @@
 # It sets variables according to platform
 #
 class varnish::params {
+  $package_name = 'varnish'
+  $service_name = 'varnish'
+  $config_file = '/etc/varnish/default.vcl'
+  $default_vcl = 'default.vcl'
 
   case $::osfamily {
     'RedHat': {
