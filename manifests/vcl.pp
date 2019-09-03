@@ -5,7 +5,7 @@
 # and Varnish will continue to run with the old config
 define varnish::vcl (
   $file = $title,
-) 
+)
 {
 
     include varnish
